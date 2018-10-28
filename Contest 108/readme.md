@@ -25,4 +25,5 @@ vector<int> beautifulArray(int N) {
 }
 ```
 ## 932
-dp
+dp  
+处理数组的时候为了方便可以使用“镶边法”，人为添上前后两行。  
