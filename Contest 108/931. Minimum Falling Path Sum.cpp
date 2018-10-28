@@ -17,3 +17,34 @@ int minFallingPathSum(vector<vector<int>>& a) {
     for (int x : dp[n - 1]) ret = min(ret, x);
     return ret;
 }
+
+// 自己写了一下
+int minFallingPathSum(vector<vector<int>>& A) {
+    int m = A.size();
+    int n = A[0].size();
+
+    // init and fill the dp array
+    vector<vector<int>> dp(m, vector<int>(n + 2, 0));
+    for(int i = 0; i < m; i++){
+        dp[i][0] = dp[i][n + 1] = INT_MAX;
+    }
+    for(int i = 1; i <= n; i++){
+        dp[0][i] = A[0][i-1];
+    }
+
+    // do dp now!
+    for(int i = 1; i < m; i++){
+        for(int j = 1; j <= n; j++){
+            int tmp = min(dp[i-1][j], dp[i-1][j-1]);
+            tmp = min(tmp, dp[i-1][j+1]);
+            dp[i][j] = A[i][j-1] + tmp;
+        }
+    }
+
+    // find min in the last row
+    int minSum = INT_MAX;
+    for(int i = 1; i<= n; i++){
+        minSum = min(minSum, dp[m-1][i]);
+    }
+    return minSum;
+}
