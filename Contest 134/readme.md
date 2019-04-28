@@ -4,7 +4,8 @@ https://leetcode.com/contest/weekly-contest-134/problems/moving-stones-until-con
 勉强算贪心吧，简单。20分钟搞定了。
 ## 1034. Coloring A Border 
 https://leetcode.com/problems/coloring-a-border/    
-floodfill。border的描述有点坑。用来练手挺好的。
+floodfill。border的描述有点坑。用来练手挺好的。  
+我的解答：https://leetcode.com/problems/coloring-a-border/discuss/283054/python  
 ## 1035. Uncrossed Lines 
 https://leetcode.com/problems/uncrossed-lines/    
 dp。本质上是LCS。
