@@ -64,6 +64,64 @@ public:
 };
 ```
 比较科学的搞法是先正着算一遍最大，再倒着算一遍最大，去掉一个的最大就等于```front[i-1] + back[i+1]```，然后最大里取最大：
+```
+static int n=[](){
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+    return 0;
+}();
+
+class Solution {
+public:
+    int solve(vector<int>& arr) {
+        int ans = INT_MIN;
+        int max_here = 0;
+        int n = arr.size();
+        for (int i = 0; i < n; i++) {
+            max_here = max(arr[i], max_here+arr[i]);
+            ans = max(ans, max_here);
+        }
+        return ans;
+    }
+    
+    int maximumSum(vector<int>& arr) {
+        int cand1 = solve(arr);  // max without poping any element
+        int n = arr.size();
+        
+        vector<int> front(n, 0);
+        vector<int> back(n, 0);
+        vector<int> sub(n, 0);
+        
+        front[0] = arr[0];
+        back[n-1] = arr[n-1];
+        for (int i = 1; i < n; i++) {
+            front[i] = max(front[i-1]+arr[i], arr[i]);
+        }
+        
+        for (int j = n-2; j >= 0 ; j--) {
+            back[j] = max(back[j+1]+arr[j], arr[j]);
+        }
+        
+        for (int k = 1; k < n-1; k++) {
+            sub[k] = front[k-1] + back[k+1];
+        }
+        // corner cases
+        if (n >= 2) {
+            sub[0] = back[1];
+            sub[n-1] = front[n-2];
+        }else{
+            if (n == 2) {
+                sub[0] = arr[1];
+                sub[1] = arr[0];
+            }else if(n == 1) {
+                sub[0] = arr[0];
+            }
+        }
+        int cand2 = *std::max_element(sub.begin(), sub.end());
+        return max(cand1, cand2);
+    }
+};
+```
 ## 5184. Make Array Strictly Increasing
 Given two integer arrays arr1 and arr2, return the minimum number of operations (possibly zero) needed to make arr1 strictly increasing.
 
@@ -86,3 +144,4 @@ Output: -1
 Explanation: You can't make arr1 strictly increasing.
 If there is no way to make arr1 strictly increasing, return -1.
 ```
+这...题目都没来得及看，哎...
