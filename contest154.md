@@ -144,7 +144,8 @@ Constraints:
 -10^4 <= arr[i] <= 10^4
 ```
 ### 5192. Critical Connections in a Network  
-https://leetcode.com/contest/weekly-contest-154/problems/critical-connections-in-a-network/  
+https://leetcode.com/contest/weekly-contest-154/problems/critical-connections-in-a-network/     
+一道经典的模板题，顺道学习怎么找强连通分量，找割边，找割点。  
 ```
 There are n servers numbered from 0 to n-1 connected by undirected server-to-server connections forming a network where connections[i] = [a, b] represents a connection between servers a and b. Any server can reach any other server directly or indirectly through the network.
 
