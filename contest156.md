@@ -51,3 +51,6 @@ class Solution:
             ans.extend([c] * ct)
         return "".join(ans)
 ```
+## 5208. Minimum Moves to Reach Target with Rotations  
+https://leetcode.com/contest/weekly-contest-156/problems/minimum-moves-to-reach-target-with-rotations/   
+直接没看。应该是搜索...  
