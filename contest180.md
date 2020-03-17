@@ -16,8 +16,8 @@ https://leetcode.com/contest/weekly-contest-180/problems/balance-a-binary-search
 小结：https://leetcode.com/problems/balance-a-binary-search-tree/discuss/542027/Python3-Similar-to-LeetCode108-recursion-%2B-inorder-traversal  
 ## 1383. Maximum Performance of a Team 
 https://leetcode.com/problems/maximum-performance-of-a-team/  
-1.贪心（一开始选efficiency最高的）
-2.然后逐步淘汰，当堆里的人数等于k，就开除掉速度最慢的，看看新加进来的人能不能增加收益  
+1. 贪心（一开始选efficiency最高的）
+2. 然后逐步淘汰，当堆里的人数等于k，就开除掉速度最慢的，看看新加进来的人能不能增加收益  
 小结：https://leetcode.com/problems/maximum-performance-of-a-team/discuss/542193/Python3-Share-my-heapq-implementation
 
 
