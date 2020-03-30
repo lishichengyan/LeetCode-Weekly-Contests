@@ -1,4 +1,6 @@
 # since 03/23/2020
+## 727 Minimum Window Subsequence (附加题)
+lcs变种  
 ## 1143 Longest Common Subsequence  
 **母题**  
 ## 1312 Minimum Insertion Steps to Make a String Palindrome  
