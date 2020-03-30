@@ -1,4 +1,6 @@
 # since 03/23/2020
+## 1143 Longest Common Subsequence  
+**母题**  
 ## 1312 Minimum Insertion Steps to Make a String Palindrome  
 lcs变种  
 ## 1092 Shortest Common Supersequence    
@@ -12,4 +14,4 @@ edit distance变种
 ## 115	Distinct Subsequences    
 dp计数  
 ## 72	Edit Distance    
-母题   
+**母题**   
