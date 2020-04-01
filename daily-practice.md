@@ -1,6 +1,11 @@
 # since 03/23/2020
+## 1278 Palindrome Partitioning III  
+需要考虑之前所有可能的dp  
+`dp[i][k] = dp[j][k-1] + cost(j, n-1), 0<= j < i`   
+cost的计算可以用dp优化  
+和813类似  
 ## 727 Minimum Window Subsequence (附加题)
- 
+还没做 
 ## 1143 Longest Common Subsequence  
 **母题**  
 ## 1312 Minimum Insertion Steps to Make a String Palindrome  
