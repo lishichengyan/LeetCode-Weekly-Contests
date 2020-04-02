@@ -1,4 +1,12 @@
 # since 03/23/2020
+## 1335 Minimum Difficulty of a Job Schedule  
+类似1278，dp都是之前的各个状态加一个代价函数取极值。   
+我的解析：https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/discuss/559774/Python-Detailed-explanation-with-examples     
+```
+dp[i][j]: min difficulty to do 0,1,...,i jobs in j days
+
+dp[i][j] = min { dp[m][j-1] + maxcost(m+1, i)}, where m < i
+```
 ## 1278 Palindrome Partitioning III  
 需要考虑之前所有可能的dp  
 `dp[i][k] = dp[j][k-1] + cost(j, i-1), 0<= j < i`   
