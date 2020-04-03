@@ -1,4 +1,17 @@
 # since 03/23/2020  
+## 410. Split Array Largest Sum 
+现在对这种分组求最优化的dp还是挺得心应手的，毕竟打完表硬找也能找到规律。    
+```
+dp[i][j] is the mimimum maximum sum after dividing nums[0..i] into m groups 
+
+dp[i][j] = min(max(dp[k][j-1], cost(k+1, i))) for 0 <= k < i
+
+corner cases:
+dp[0][j] is invalid for all valid j
+dp[i][0] is invalid for all valid i
+dp[i][1] is sum(nums[1:i+1]) for all valid i
+```   
+sum可以用前缀和优化一下。但这题最妙的做法是二分...
 ## 813 Largest Sum of Averages  
 类似1335，1278，```dp(now) = MAX/MIN{dp(previous) + cost(previous, now)}```     
 我的解析：https://leetcode.com/problems/largest-sum-of-averages/discuss/561368/Python3-dp(now)-MAXMINdp(previous)-%2B-cost(previous-to-now)
