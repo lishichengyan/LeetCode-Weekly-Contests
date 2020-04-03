@@ -1,4 +1,7 @@
-# since 03/23/2020
+# since 03/23/2020  
+## 813 Largest Sum of Averages  
+类似1335，1278，```dp(now) = MAX/MIN{dp(previous) + cost(previous, now)}```     
+我的解析：https://leetcode.com/problems/largest-sum-of-averages/discuss/561368/Python3-dp(now)-MAXMINdp(previous)-%2B-cost(previous-to-now)
 ## 1335 Minimum Difficulty of a Job Schedule  
 类似1278，dp都是之前的各个状态加一个代价函数取极值。   
 我的解析：https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/discuss/559774/Python-Detailed-explanation-with-examples     
