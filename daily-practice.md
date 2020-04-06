@@ -1,5 +1,6 @@
 # since 03/23/2020  
-## 300. Longest Increasing Subsequence  
+## 300. Longest Increasing Subsequence    
+**母题**       
 nlogn的做法不仅维护了LIS，而且维护的是末尾最小的LIS（便于下一次增长），很妙！      
 相关的解答：https://blog.csdn.net/u013178472/article/details/54926531
 ## 368. Largest Divisible Subset （重做）
