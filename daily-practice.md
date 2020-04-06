@@ -1,4 +1,9 @@
 # since 03/23/2020  
+## 300. Longest Increasing Subsequence  
+nlogn的做法不仅维护了LIS，而且维护的是末尾最小的LIS（便于下一次增长），很妙！      
+相关的解答：https://blog.csdn.net/u013178472/article/details/54926531
+## 368. Largest Divisible Subset （重做）
+需要重做！
 ## 410. Split Array Largest Sum 
 现在对这种分组求最优化的dp还是挺得心应手的，毕竟打完表硬找也能找到规律。    
 ```
