@@ -1,9 +1,11 @@
 # since 03/23/2020  
+## 673. Number of Longest Increasing Subsequence   
+LIS变形。难点不在于LIS，而在于dp计数，首先要理解dp和count的含义：```dp[i]表示以nums[i]结尾的子数组的LIS的长度，count[i]表示以nums[i]结尾的长度为dp[i]的子序列的个数```，不难想到dp数组一定是一个不会递减的序列，```dp[i]```的取值只有两种可能，一个是```dp[j]```，另一个是```dp[j]+1```，现在如果```nums[i] > nums[j]```，当我们发现```dp[i] == dp[j]```说明需要更新```dp[i]```，即```dp[i] = dp[j]+1```，同时有```count[i] = count[j]```（即，将```nums[i]```添加到```nums[j]```后面可以得到```count[j]```个长度为```dp[i]```的更长的子序列）；如果我们发现```dp[i] == dp[j]+1```，说明```dp[i]```已经被更新过了，进一步说明```nums[0..j-1]```里有某个数比```nums[i]```还小（在这种情况下，我们有```count[i]==count[某个数]```种得到更长子序列的方法数，同时也可以将```nums[i]```添加到```nums[j]```后面，有```count[j]```种方法数，所以总的方法数是```count[i] + count[j]```种）。
 ## 300. Longest Increasing Subsequence    
 **母题**       
 nlogn的做法不仅维护了LIS，而且维护的是末尾最小的LIS（便于下一次增长），很妙！      
 相关的解答：https://blog.csdn.net/u013178472/article/details/54926531
-## 368. Largest Divisible Subset （重做）
+## 368. Largest Divisible Subset (重做)
 需要重做！
 ## 410. Split Array Largest Sum 
 现在对这种分组求最优化的dp还是挺得心应手的，毕竟打完表硬找也能找到规律。    
@@ -48,7 +50,7 @@ lcs变种，dp式和lcs一模一样
 edit distance变种  
 ## 583	Delete Operation for Two Strings       
 edit distance变种  
-## 115	Distinct Subsequences    
+## 115	Distinct Subsequences (重做)   
 dp计数  
 ## 72	Edit Distance    
 **母题**   
