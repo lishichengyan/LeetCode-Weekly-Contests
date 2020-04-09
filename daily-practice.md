@@ -1,4 +1,7 @@
-# since 03/23/2020  
+# since 03/23/2020    
+## 1105. Filling Bookcase Shelves (重做)    
+类似1043      
+重点是书的顺序不能乱。     
 ## 1043. Partition Array for Maximum Sum (重做)   
 ```dp[i] = max(dp[i-k] + cur_max*k)```，没见过这种类型的dp。  
 ## 673. Number of Longest Increasing Subsequence   
