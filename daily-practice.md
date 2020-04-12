@@ -1,4 +1,30 @@
 # since 03/23/2020    
+## 730. Count Different Palindromic Subsequences   
+去重很烦。  
+思路是：
+```
+首尾字符相同:   
+1. 中间子串不包含相同的字符   
+例子: f("bccb") = 2*f("cc") + 2   
+2. 中间子串有相同字符，相同字符恰好在子串中间   
+例子: f("bcbcb") = 2*f("cbc") + 1  
+3. 首尾的邻居相同   
+例子: f("bbcabb") = 2*f("bcab") - f("ca")   
+用代码来表达就是:
+if (s[0] == s[n-1]) {
+  l, r = 1, n-2 
+  while (l <= n-1 and s[0] != l) l++
+  while (r <= n-1 and s[1] != r) r--
+  if (l > r) {
+    case1
+  } elif (l == r) {
+    case2
+  } else {
+    case3
+  }
+}
+首尾字符不相同，f(s) = f(s[0:n-1]) + f(s[1:n]) - f(s[1:n-1])
+```
 ## 516. Longest Palindromic Subsequence (重做)  
 ## 375. Guess Number Higher or Lower II (重做)   
 ## 312. Burst Balloons (重做)
