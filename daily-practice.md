@@ -1,4 +1,7 @@
 # since 03/23/2020    
+## 516. Longest Palindromic Subsequence (重做)  
+## 375. Guess Number Higher or Lower II (重做)   
+## 312. Burst Balloons (重做)
 ## 1105. Filling Bookcase Shelves (重做)    
 类似1043      
 重点是书的顺序不能乱。     
