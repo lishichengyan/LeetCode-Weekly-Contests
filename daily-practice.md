@@ -1,6 +1,8 @@
 # since 03/23/2020    
+## 1130. Minimum Cost Tree From Leaf Values    
+dp并不是最优解，单调栈。  
 ## 1000. Minimum Cost to Merge Stones    
-## 730. Count Different Palindromic Subsequences   
+## 730. Count Different Palindromic Subsequences     
 去重很烦。  
 思路是：
 ```
