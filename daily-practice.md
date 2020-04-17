@@ -1,8 +1,10 @@
 # since 03/23/2020    
+## 691. Stickers to Spell Word  
+状压dp，不会。   
 ## 1130. Minimum Cost Tree From Leaf Values    
 dp并不是最优解，单调栈。  
 ## 1000. Minimum Cost to Merge Stones    
-## 730. Count Different Palindromic Subsequences     
+## 730. Count Different Palindromic Subsequences      
 去重很烦。  
 思路是：
 ```
