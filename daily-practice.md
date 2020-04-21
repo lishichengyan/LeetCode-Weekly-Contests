@@ -1,4 +1,9 @@
 # since 03/23/2020    
+## 1039. Minimum Score Triangulation of Polygon
+## 943. Find the Shortest Superstring
+## 1411. Number of Ways to Paint N × 3 Grid
+## 1349. Maximum Students Taking Exam
+## 1125. Smallest Sufficient Team 
 ## 691. Stickers to Spell Word  
 状压dp，不会。   
 ## 1130. Minimum Cost Tree From Leaf Values    
