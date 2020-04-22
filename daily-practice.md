@@ -1,5 +1,6 @@
 # since 03/23/2020    
-## 1039. Minimum Score Triangulation of Polygon
+## 1039. Minimum Score Triangulation of Polygon  
+固定一边
 ## 943. Find the Shortest Superstring
 ## 1411. Number of Ways to Paint N × 3 Grid
 ## 1349. Maximum Students Taking Exam
