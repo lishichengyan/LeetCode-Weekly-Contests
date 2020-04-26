@@ -4,7 +4,8 @@ https://leetcode.com/contest/weekly-contest-186/problems/maximum-score-after-spl
 easy
 ## 1423. Maximum Points You Can Obtain from Cards  
 https://leetcode.com/contest/weekly-contest-186/problems/maximum-points-you-can-obtain-from-cards/  
-滑动窗口。  
+滑动窗口。    
+前缀和和后缀和也能解。  
 ## 1424. Diagonal Traverse II  
 https://leetcode.com/contest/weekly-contest-186/problems/diagonal-traverse-ii/    
 哈希表，还行。
