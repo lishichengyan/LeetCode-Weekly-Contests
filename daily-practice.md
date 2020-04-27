@@ -1,4 +1,9 @@
 # since 03/23/2020    
+## 1420. Build Array Where You Can Find The Maximum Exactly K Comparisons
+## 1187. Make Array Strictly Increasing
+## 1027. Longest Arithmetic Sequence
+## 639. Decode Ways II
+## 91. Decode Ways
 ## 1039. Minimum Score Triangulation of Polygon  
 固定一边
 ## 943. Find the Shortest Superstring
