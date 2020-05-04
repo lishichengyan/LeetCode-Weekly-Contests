@@ -1,4 +1,11 @@
 # since 03/23/2020    
+## 1419. Minimum Number of Frogs Croaking
+## 546. Remove Boxes
+## 514. Freedom Trail
+## 1316. Distinct Echo Substrings
+## 1223. Dice Roll Simulation
+## 1269. Number of Ways to Stay in the Same Place After Some Steps
+## 446. Arithmetic Slices II - Subsequence
 ## 1420. Build Array Where You Can Find The Maximum Exactly K Comparisons
 ## 1187. Make Array Strictly Increasing   
 似懂非懂。    
